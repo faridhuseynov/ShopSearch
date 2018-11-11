@@ -38,7 +38,7 @@
                  Grid.Row="3"
                  FontSize="20" 
                  BorderBrush="Black"
-                 Margin="10,10,10,10">
+                 Margin="10,10,10,10" SelectionChanged="searchResult_SelectionChanged">
         </ListBox>
     </Grid>
 </Window>

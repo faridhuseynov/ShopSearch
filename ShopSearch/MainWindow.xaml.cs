@@ -67,5 +67,14 @@ namespace ShopSearch
                 }
             }
         }
+
+        private void searchResult_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var product = searchResult.SelectedItem as Product;
+            if (product != null)
+                priceBox.Text = product.UnitPrice.ToString();
+            else
+                priceBox.Text = "";
+        }
     }
 }
