@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShopSearch"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Shop Search" Height="500" Width="400">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition> 
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="searchBox"
+                 Grid.Row="0" 
+                 FontSize="20" 
+                 BorderBrush="Black"
+                 Margin="10,10,10,10"
+                 VerticalAlignment="Bottom" TextChanged="searchBox_TextChanged">
+        </TextBox>
+        <TextBox x:Name="priceBox"
+                 Grid.Row="1" 
+                 FontSize="20" 
+                 BorderBrush="Black"
+                 Margin="10,10,10,10"
+                 VerticalAlignment="Bottom"
+                 IsReadOnly="True">
+        </TextBox>
+        <CheckBox x:Name="discountCheckBox"
+                  Grid.Row="2"
+                  BorderBrush="Black"
+                  Margin="10,3,0,0">
+
+        </CheckBox>
+        <ListBox x:Name="searchResult"
+                 Grid.Row="3"
+                 FontSize="20" 
+                 BorderBrush="Black"
+                 Margin="10,10,10,10">
+        </ListBox>
     </Grid>
 </Window>
