@@ -31,7 +31,8 @@
         <CheckBox x:Name="discountCheckBox"
                   Grid.Row="2"
                   BorderBrush="Black"
-                  Margin="10,3,0,0">
+                  Margin="10,3,0,0" Checked="discountCheckBox_Checked"
+                  Unchecked="discountCheckBox_Checked">
 
         </CheckBox>
         <ListBox x:Name="searchResult"
